@@ -6,6 +6,6 @@ class Ship:
     def is_worth_it(self):
         return (self.draft - (self.crew * 1.5)) > 20
 
-shipObj = Ship(15, 10)
-
-print(shipObj.is_worth_it())
+if __name__ == '__main__':
+    titanic = Ship(15, 10)
+    print(titanic.is_worth_it())
